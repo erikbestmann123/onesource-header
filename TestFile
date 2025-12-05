@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONESOURCE Product Header</title>
+    
+    <!-- Saffron Design System CSS -->
+    <link rel="stylesheet" href="https://cdn.saffron.thomsonreuters.com/css/saffron.min.css">
+    
+    <!-- Saffron Design System Web Components -->
+    <script type="module" src="https://cdn.saffron.thomsonreuters.com/js/saffron.esm.js"></script>
+</head>
+<body>
+    <saf-product-header tasks-aria-label="Product tasks" global-aria-label="Global navigation">
+        <saf-logo slot="logo" appearance="1-color-reversed" product-name="ONESOURCE"></saf-logo>
+        
+        <div slot="tasks">
+            <saf-product-header-item>
+                <saf-button appearance="tertiary" icon-only>
+                    <saf-icon icon-name="magnifying-glass"></saf-icon>
+                    <saf-sr-only>Search</saf-sr-only>
+                </saf-button>
+            </saf-product-header-item>
+            
+            <saf-product-header-item>
+                <saf-button appearance="tertiary" icon-only>
+                    <saf-icon icon-name="grid"></saf-icon>
+                    <saf-sr-only>Applications</saf-sr-only>
+                </saf-button>
+            </saf-product-header-item>
+            
+            <saf-product-header-item>
+                <saf-button appearance="tertiary" icon-only>
+                    <saf-icon icon-name="circle-user"></saf-icon>
+                    <saf-sr-only>User profile</saf-sr-only>
+                </saf-button>
+            </saf-product-header-item>
+        </div>
+    </saf-product-header>
+    
+    <main style="padding: 2rem;">
+        <h1>ONESOURCE Application</h1>
+        <p>This page demonstrates the Saffron product header with ONESOURCE branding.</p>
+    </main>
+</body>
+</html>
